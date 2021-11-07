@@ -1,0 +1,20 @@
+#define a group manager
+- !group managers
+- !group users
+
+- !user
+  id: mymanager
+  owner: !group managers
+  
+- !user
+  id: myuser
+  owner: !group users
+
+
+- !grant
+  role: !group managers
+  members:
+    - !user mymanager
+
+!-
+

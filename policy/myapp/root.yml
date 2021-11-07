@@ -1,0 +1,9 @@
+# root.yml
+- !group admin
+- !permit
+  role: !group admin
+  privileges: [ read, create, update ]
+  resource: !policy root
+
+- !policy
+  id: 

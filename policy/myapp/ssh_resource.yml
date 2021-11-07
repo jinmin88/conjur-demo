@@ -1,0 +1,18 @@
+- &variables
+  - !variable username
+  - !variable password
+
+- !permit
+  resource: *variables
+  privileges: [ read, execute ]
+  roles: !group managers
+
+- !permit
+  resource: *variables
+  privileges: [ read, execute, update ]
+  roles: !group users
+
+- !permit
+  resource: *variables
+  privileges: [ read, execute ]
+  roles: !layer apps

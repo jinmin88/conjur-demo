@@ -1,0 +1,9 @@
+# define a layer apps
+- !layer apps
+# define host app-1
+- !host app-01
+# add host app-01 to layer apps
+- !grant
+  role: !layer apps
+  member: !host app-01
+  
