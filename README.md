@@ -28,3 +28,5 @@ docker-compose exec conjur conjurctl account create myorg > myorg_data
 docker-compose exec client conjur init -u conjur -a myorg
 ```
 ## install 
+
+https://github.com/AntonZN/fastapi-tortoise-aerich-traefik-docker/tree/ab61a23f39f1b4fbd8e124142a7f51e1b7a279fd
